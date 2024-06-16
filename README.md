@@ -9,7 +9,7 @@ SentinelAI is an advanced AI powered system for Intelligent CCTV Camera Manageme
 
 This comprises of the following features and raises an alert to the relevant police authorities when something suspicious happens 
 
-- [Weapon Detection](https://github.com/Pranjal-88/Sentinel-AI/tree/main/CrimeDetection/Violence_Detection)]
-- [Violence Detection]([CrimeDetectection/Violence.py](https://github.com/Pranjal-88/Sentinel-AI/tree/main/CrimeDetection/Violence_Detection)]
+- [Weapon Detection](https://github.com/Pranjal-88/Sentinel-AI/tree/main/CrimeDetection/Violence_Detection)
+- [Violence Detection](https://github.com/Pranjal-88/Sentinel-AI/tree/main/CrimeDetection/Violence_Detection)
 - [Bribe Detection](https://github.com/Pranjal-88/Sentinel-AI/blob/main/CrimeDetection/BribeDetection.py)
 
