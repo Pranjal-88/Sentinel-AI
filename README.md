@@ -13,3 +13,4 @@ This comprises of the following features and raises an alert to the relevant pol
 - [Violence Detection](https://github.com/Pranjal-88/Sentinel-AI/tree/main/CrimeDetection/Violence_Detection)
 - [Bribe Detection](https://github.com/Pranjal-88/Sentinel-AI/blob/main/CrimeDetection/BribeDetection.py)
 
+## [Crime Tracking](https://github.com/Pranjal-88/Sentinel-AI/tree/main/Crime_Trackingx)
