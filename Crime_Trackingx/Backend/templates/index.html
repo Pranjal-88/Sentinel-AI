@@ -1,0 +1,115 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.min.js"></script>
+        <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=62d19aaf378f40bb782922da" type="text/javascript"></script>
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJcuJLDd0LwdWKb2-GnzOs65wlDZRVSPo&libraries=places"></script>
+        <script defer src="static/script.js"></script>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                height: 100vh;
+                font-family: Arial, sans-serif;
+                overflow: hidden; /* Disable scrolling for the entire page */
+            }
+
+            #left-section {
+                width: 70%;
+                position: relative;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+
+            #search-bar {
+                width: 90%;
+                margin-left: 80px;
+                padding: 10px;
+                margin-bottom: 20px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+
+            #map {
+                width: 100%;
+                height: calc(100vh - 60px); /* Adjusted height to accommodate the search bar */
+            }
+
+            #right-section {
+                width: 30%;
+                overflow-y: auto;
+                overflow-x: hidden;
+                padding: 20px;
+                box-sizing: border-box;
+                height: 100vh;
+                background-color: #f0f0f0;
+            }
+
+            #logo {
+            /* Add styles for the logo */
+            width: 60px; /* Adjust the width as needed */
+            height: auto;
+            position: absolute;
+            top: 10px; /* Adjust the top position as needed */
+            left: 20px; /* Adjust the left position as needed */
+        }
+    /* 
+            .stream-box {
+                width: 100%;
+                height: 150px;
+                margin-bottom: 20px;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                border-radius: 5px;
+            } */
+
+            .stream-box {
+        width: 100%;
+        height: auto; /* Set height to auto to allow content to determine the height */
+        max-height: 480px; /* Set a maximum height if needed */
+        margin-bottom: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 5px;
+        overflow: hidden; /* Hide overflow content */
+    }
+
+    .highlight {
+                border: 5px solid red; /* Red border for highlighted camera */
+            }
+
+    .stream-box img {
+        max-width: 100%; /* Ensure the video doesn't exceed the width of its container */
+        height: auto; /* Allow the video to adjust its height proportionally */
+    }
+
+        </style>
+        <title>Police Surveillance Control Room</title>
+    </head>
+    <body>
+        <div id="left-section">
+            <!-- <img id="logo" src="https://police.rajasthan.gov.in/uploads/rj_logo_01f666f4b4.png" alt="Logo"> -->
+            <input type="text" id="search-bar" placeholder="Search...">
+            <div id="map"></div>
+        </div>
+        <div id="right-section">
+            <div class="stream-box"><img id="cameraStream1" width="640" height="480" autoplay></img></div>
+            <div class="stream-box"><img id="cameraStream2" width="640" height="480" autoplay></img></div>
+            <div class="stream-box"><img id="cameraStream3" width="640" height="480" autoplay></img></div>
+        </div>
+    </body>
+    </html>
