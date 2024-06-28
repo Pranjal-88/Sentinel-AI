@@ -1,4 +1,4 @@
-# SentinelAI 
+# Sentinel AI 
 
 ## Overview
 
