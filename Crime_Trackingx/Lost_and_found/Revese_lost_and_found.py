@@ -7,7 +7,7 @@ import numpy as np
 import os
 
 folder_pth=r'C:\Users\HP\OneDrive\Desktop\PranCode\MLH\Lost_and_found\Owner'
-
+print("hi")
 #->BLAZEFACE
 mp_face_detection=mp.solutions.face_detection
 face_detection=mp_face_detection.FaceDetection(min_detection_confidence=0.45)
